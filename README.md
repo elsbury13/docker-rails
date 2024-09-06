@@ -9,6 +9,12 @@
 ## Testing It Out
 Head [here](http://localhost:8020)
 
+## Update Gems
+`docker compose run baseapp bundle install --gemfile /opt/app/Gemfile`
+
+## Install Gem (rename GEM_NAME)
+`gem install GEM_NAME`
+
 ### If initialisation of the database is needed, then run the following commands to initialise the database:
 `docker­ compose run drkiq rake db:reset`
 `docker­ compose run drkiq rake db:migrate`
